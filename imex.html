@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes e Séries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Fundo preto para o corpo */
+            margin: 0;
+            padding: 0;
+            color: #ff0000;
+        }
+        header {
+            background-color: #333;
+            color: #ff0000;
+            text-align: center;
+            padding: 1rem;
+        }
+        h2.secao-titulo {
+            color: #ff0000;
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 2rem;
+        }
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+            background-color: #000; /* Fundo preto para a área dos filmes e séries */
+        }
+        .filme, .serie {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #000;
+            text-decoration: none; /* Remove underline dos links */
+        }
+        .filme:hover, .serie:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.4);
+        }
+        .filme img, .serie img {
+            max-width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .filme:hover img, .serie:hover img {
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Filmes e Séries</h1>
+    </header>
+
+    <!-- Seção de Filmes -->
+    <h2 id="filmes" class="secao-titulo">Filmes</h2>
+    <section class="catalogo">
+        <a href="https://www.disneyplus.com/pt-br/movies/the-avengers-os-vingadores-da-marvel-studios/2h6PcHFDbsPy" target="_blank">
+            <div class="filme">
+                <img src="img/poster-os-vingadores-ultimato-a-242769bd.webp" alt="Poster de Vingadores: Ultimato">
+                <h2>Vingadores: Ultimato</h2>
+            </div>
+        </a>
+
+        <a href="https://www.primevideo.com/-/pt/detail/Coringa/0QSV379J8LY7Y6BZTFZJDEP21S" target="_blank">
+            <div class="filme">
+                <img src="img/image.jpg" alt="Poster de Coringa">
+                <h2>Coringa</h2>
+            </div>
+        </a>
+
+        <a href="https://www.primevideo.com/-/pt/detail/Interestelar/0PUNMGZEWOMYFKR1XIGOLTL2YM" target="_blank">
+            <div class="filme">
+                <img src="img/476171.jpg" alt="Poster de Interestelar">
+                <h2>Interestelar</h2>
+            </div>
+        </a>
+
+        <a href="https://globoplay.globo.com/parasita/t/nNRCJg5rkJ/" target="_blank">
+            <div class="filme">
+                <img src="img/images.jpeg" alt="Poster de Parasita">
+                <h2>Parasita</h2>
+            </div>
+        </a>
+    </section>
+
+    <!-- Seção de Séries -->
+    <h2 id="series" class="secao-titulo">Séries</h2>
+    <section class="catalogo">
+        <a href="https://www.netflix.com/br/title/80057281" target="_blank">
+            <div class="serie">
+                <img src="img/images (1).jpeg" alt="Poster de Stranger Things">
+                <h2>Stranger Things</h2>
+            </div>
+        </a>
+
+        <a href="https://www.netflix.com/br/title/70143836" target="_blank">
+            <div class="serie">
+                <img src="img/images (2).jpeg" alt="Poster de Breaking Bad">
+                <h2>Breaking Bad</h2>
+            </div>
+        </a>
+
+        <a href="https://www.max.com/br/pt/shows/game-of-thrones/4f6b4985-2dc9-4ab6-ac79-d60f0860b0ac" target="_blank">
+            <div class="serie">
+                <img src="img/91iY86ZIuOL._AC_UF894,1000_QL80_.jpg" alt="Poster de Game of Thrones">
+                <h2>Game of Thrones</h2>
+            </div>
+        </a>
+
+        <a href="https://www.disneyplus.com/pt-br/series/the-mandalorian/3jLIGMDYINqD" target="_blank">
+            <div class="serie">
+                <img src="img/The_Mandalorian_season_2_poster.jpg" alt="Poster de The Mandalorian">
+                <h2>The Mandalorian</h2>
+            </div>
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Catálogo de Filmes e Séries. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
